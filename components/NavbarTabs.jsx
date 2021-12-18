@@ -26,13 +26,13 @@ export default function NavbarTabs() {
 const HeaderButton = (props) => (
   <View>
     <TouchableOpacity
+      onPress={() => props.setActiveTab(props.Text)}
       style={{
         backgroundColor: props.activeTab == props.Text?'black':'white',
         paddingVertical: 6,
         paddingHorizontal: 16,
         borderRadius: 15,
       }}
-      onPress={() => props.setActiveTab(props.Text)}
     >
       <Text
         style={{
