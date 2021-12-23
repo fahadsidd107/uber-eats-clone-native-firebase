@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image,Text} from "react-native";
 import { TouchableOpacity } from "react-native";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 export default function RestaurantItem() {
   return (
     <View>
       <RestaurantImage />
+      <RestaurantInfo />
     </View>
   );
 }
@@ -24,3 +25,10 @@ const RestaurantImage = () => (
     </TouchableOpacity>
     </>
 );
+
+const RestaurantInfo = () => (
+<Text style={{color:'black'}}> Faad</Text>
+)
+
+
+
