@@ -4,10 +4,16 @@ import { TouchableOpacity } from "react-native";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 export default function RestaurantItem() {
   return (
-    <View>
+    <TouchableOpacity >
+      <View style={{
+      marginTop:10,
+      padding:15,
+      backgroundColor:'white',
+      }}>
       <RestaurantImage />
       <RestaurantInfo />
     </View>
+    </TouchableOpacity>
   );
 }
 
@@ -44,10 +50,11 @@ const RestaurantInfo = () => (
   </View>
 
   <View style={{
-  backgroundColor:'#fff',
+  backgroundColor:'#eee',
   height:30,
   width:30,
   alignItems:'center',
+  justifyContent:'center',
   borderRadius:15,
 }}>
 <Text>4.5</Text>
