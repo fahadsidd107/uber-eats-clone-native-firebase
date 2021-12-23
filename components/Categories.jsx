@@ -31,7 +31,6 @@ const items = [
     text: "Desserts",
   },
 ];
-
 export default function Categories() {
   return (
     <View
