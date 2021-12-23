@@ -34,10 +34,24 @@ const RestaurantInfo = () => (
     marginTop:10,
     }}>
   <View>
-<Text style={{color:'black'}}>Farmhouse Desi Cuisine</Text>
-<Text style={{color:'black'}}>30-34 min</Text>
+<Text style={{
+  fontSize:15,
+  fontWeight:'bold'
+  }}>Farmhouse Desi Cuisine</Text>
+<Text style={{
+  fontSize:14,
+  color:'grey'}}>30-34 min</Text>
   </View>
-<Text style={{color:'black'}}>4.5</Text>
+
+  <View style={{
+  backgroundColor:'#fff',
+  height:30,
+  width:30,
+  alignItems:'center',
+  borderRadius:15,
+}}>
+<Text>4.5</Text>
+  </View>
   </View>
 )
 
