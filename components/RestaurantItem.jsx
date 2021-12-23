@@ -4,7 +4,7 @@ import { TouchableOpacity } from "react-native";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 export default function RestaurantItem() {
   return (
-    <TouchableOpacity >
+    <TouchableOpacity activeOpacity={1} style={{marginBottom:30,}} >
       <View style={{
       marginTop:10,
       padding:15,
