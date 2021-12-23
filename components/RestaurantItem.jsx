@@ -27,7 +27,18 @@ const RestaurantImage = () => (
 );
 
 const RestaurantInfo = () => (
-<Text style={{color:'black'}}> Faad</Text>
+  <View style={{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginTop:10,
+    }}>
+  <View>
+<Text style={{color:'black'}}>Farmhouse Desi Cuisine</Text>
+<Text style={{color:'black'}}>30-34 min</Text>
+  </View>
+<Text style={{color:'black'}}>4.5</Text>
+  </View>
 )
 
 
