@@ -8,16 +8,16 @@ export const localRestaurants = [
   {
     name: "Muhammadi Kabab House",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zameen.com%2Fblog%2F5-best-bbq-restaurants-lahore.html&psig=AOvVaw2niu7aEUayXC14zyI1SbVH&ust=1640527909168000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjJ9u2Q__QCFQAAAAAdAAAAABAD",
+      "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
     categories: ["Cafe", "Bar"],
     price: "$$",
     reviews: 1244,
-    rating: 4.5,
+    rating: 4,
   },
   {
     name: "Sidra Fast Food",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pakistanihealthyrecipes.com%2Fhalwa-puri%2F&psig=AOvVaw3pKqYuwAshvtVs1lVqcB6T&ust=1640527961568000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIDMxoiR__QCFQAAAAAdAAAAABAU",
+      "https://i.pinimg.com/564x/b8/80/94/b88094e5dfa55fb8ae626b99158ca20c.jpg",
     categories: ["Cafe", "Bar"],
     price: "$$",
     reviews: 1244,
@@ -26,7 +26,7 @@ export const localRestaurants = [
   {
     name: "Huzaifa Burger Point",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F751890100264267957%2F&psig=AOvVaw0ZHGyqBaDf3Kp4WGEJeZpa&ust=1640528028304000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOij5K2R__QCFQAAAAAdAAAAABAD",
+      "https://i.pinimg.com/564x/ca/3c/e6/ca3ce6e26ed057b8dfb064673db85199.jpg",
     categories: ["Indian", "Bar"],
     price: "$$",
     reviews: 700,
@@ -74,7 +74,7 @@ export default function RestaurantItem() {
       backgroundColor:'white',
       borderRadius:22,
       }}>
-      <RestaurantImage image={localRestaurants[0].image_url}/>
+      <RestaurantImage image={localRestaurants[2].image_url}/>
       <RestaurantInfo name={localRestaurants[0].name} rating={localRestaurants[0].rating}/>
     </View>
     ))}
