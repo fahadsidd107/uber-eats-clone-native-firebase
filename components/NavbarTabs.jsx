@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Touchable } from "react-native";
-import { TouchableOpacity } from "react-native-web";
+import { View, Text,TouchableOpacity } from "react-native";
 
 export default function NavbarTabs() {
   const [activeTab, setActiveTab] = useState("Delivery");
