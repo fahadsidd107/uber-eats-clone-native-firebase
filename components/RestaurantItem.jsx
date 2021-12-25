@@ -65,24 +65,27 @@ export const localRestaurants = [
 export default function RestaurantItem() {
   return (
     <TouchableOpacity activeOpacity={1} style={{marginBottom:30,}} >
-      <View style={{
+    {localRestaurants.map((restaurant,index)=>(
+      <View key={index}
+      style={{
       marginTop:10,
       marginHorizontal:5,
       padding:15,
       backgroundColor:'white',
       borderRadius:22,
       }}>
-      <RestaurantImage />
-      <RestaurantInfo />
+      <RestaurantImage image={localRestaurants[0].image_url}/>
+      <RestaurantInfo name={localRestaurants[0].name} rating={localRestaurants[0].rating}/>
     </View>
+    ))}
     </TouchableOpacity>
   );
 }
 
-const RestaurantImage = () => (
+const RestaurantImage = (props) => (
   <><Image
     source={{
-      uri: "https://static.onecms.io/wp-content/uploads/sites/9/2020/04/24/ppp-why-wont-anyone-rescue-restaurants-FT-BLOG0420.jpg",
+      uri: props.image,
     }}
     style={{ width: "100%", height: 180 }} />
     <TouchableOpacity style={{
@@ -94,7 +97,7 @@ const RestaurantImage = () => (
     </>
 );
 
-const RestaurantInfo = () => (
+const RestaurantInfo = (props) => (
   <View style={{
     flexDirection:'row',
     justifyContent:'space-between',
@@ -105,7 +108,7 @@ const RestaurantInfo = () => (
 <Text style={{
   fontSize:15,
   fontWeight:'bold'
-  }}>Farmhouse Desi Cuisine</Text>
+  }}>{props.name}</Text>
 <Text style={{
   fontSize:14,
   color:'grey'}}>30-34 min</Text>
@@ -119,7 +122,7 @@ const RestaurantInfo = () => (
   justifyContent:'center',
   borderRadius:16,
 }}>
-<Text>4.5</Text>
+<Text>{props.rating}</Text>
   </View>
   </View>
 )
