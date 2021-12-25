@@ -35,7 +35,7 @@ export const localRestaurants = [
   {
     name: "Muhammadi Sweets",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Findian-sweets-wallpapers&psig=AOvVaw1G8lqfnB0qfsl9PJ7eptGV&ust=1640528152823000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOiVmuOR__QCFQAAAAAdAAAAABAn",
+      "https://i.pinimg.com/564x/9b/a2/37/9ba2373f9b81b8607bcbc834d8acc582.jpg",
     categories: ["Cafe", "Bar"],
     price: "$$",
     reviews: 1244,
@@ -44,7 +44,7 @@ export const localRestaurants = [
   {
     name: "MashAllah Katakat Fish",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.epicurious.com%2Frecipes-menus%2F14-simple-easy-recipes-to-cook-fish-seafood-gallery&psig=AOvVaw1n0nwLZ-XwsSYfIJLD8HVR&ust=1640528455295000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjI5_OS__QCFQAAAAAdAAAAABAJ",
+      "https://i.pinimg.com/564x/c5/e7/50/c5e750072624bcf4d90d57ff6fb27b5a.jpg",
     categories: ["Cafe", "Bar"],
     price: "$$",
     reviews: 1244,
@@ -53,7 +53,7 @@ export const localRestaurants = [
   {
     name: "Huzaifa Burger Point",
     image_url:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.masala.tv%2Fgol-gappay-ki-chaat-mehboobs-kitchen-chef-mehboob-khan%2F%3Fref%3Dtheredish.com%252Fweb&psig=AOvVaw2exFB2-1M9KSryAFh3M2J2&ust=1640528502231000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDz14uT__QCFQAAAAAdAAAAABAN",
+      "https://i.pinimg.com/564x/99/0b/95/990b95dca1f57590ce2556a771703b6d.jpg",
     categories: ["Indian", "Bar"],
     price: "$$",
     reviews: 700,
@@ -74,8 +74,8 @@ export default function RestaurantItem() {
       backgroundColor:'white',
       borderRadius:22,
       }}>
-      <RestaurantImage image={localRestaurants[2].image_url}/>
-      <RestaurantInfo name={localRestaurants[0].name} rating={localRestaurants[0].rating}/>
+      <RestaurantImage image={restaurant.image_url}/>
+      <RestaurantInfo name={restaurant.name} rating={restaurant.rating}/>
     </View>
     ))}
     </TouchableOpacity>
