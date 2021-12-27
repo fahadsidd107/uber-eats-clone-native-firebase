@@ -7,11 +7,20 @@ export default function SearchBar() {
   return (
     <View style={{ marginTop: 15, flexDirection: "row" }}>
       <GooglePlacesAutocomplete
-        onPress={(data, details = null) => {
+        onPress={(data, description = null) => {
           // 'details' is provided when fetchDetails = true
-          console.log(data, details);
+          console.log(data, description);
         }}
-        query={{ key: "AIzaSyC8LevMasKjLoNvn8tphIPTsm7LSaN7hSE" }}
+        query={{ key: "AIzaSyC8LevMasKjLoNvn8tphIPTsm7LSaN7hSE",
+        language: 'en', }}
+        requestUrl={{
+        useOnPlatform: 'web', // or "all"
+        url:
+          'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
+        headers: {
+          Authorization: `an auth token`, // if required for your proxy
+        },
+      }}
         placeholder="Search"
         styles={{
           textInput: {
