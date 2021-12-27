@@ -5,43 +5,43 @@ import NavbarTabs from '../components/NavbarTabs';
 import RestaurantItem, { localRestaurants } from '../components/RestaurantItem';
 import SearchBar from '../components/SearchBar';
 import cors from "cors"
-// const YELP_API_KEY = "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7iBQ9R74SyfxRg9LWnBAkZY06BtAZAe4d2dfX-2vuX8a1l5V7foctHfX9UKEyoM5ts3YXYx";
+const YELP_API_KEY = "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7iBQ9R74SyfxRg9LWnBAkZY06BtAZAe4d2dfX-2vuX8a1l5V7foctHfX9UKEyoM5ts3YXYx";
 
 export default function Home() {
 const [restaurantData, setRestaurantData] = useState(localRestaurants)
-// const [city, setCity] = useState("San Francisco");
-  
+const [city, setCity] = useState("Karachi");
+const [activeTab,setActiveTab]= useState('Delivery')  
 
-  // const getRestaurantsFromYelp = () => {
-  //   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=Karachi`;
+  const getRestaurantsFromYelp = () => {
+    const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
-  //   const apiOptions = {
-  //     headers: {
-  //       Authorization: `Bearer ${YELP_API_KEY}`,
-  //     },
-  //   mode: "no-cors"
-  //   };
+    const apiOptions = {
+      headers: {
+        Authorization: `Bearer ${YELP_API_KEY}`,
+      },
+    mode: "no-cors"
+    };
 
-  //   return fetch(yelpUrl, apiOptions)
-  //     .then((res) => res.json())
-  //     .then((json) =>
-  //       setRestaurantData(
-  //         json.businesses.filter((business) =>
-  //           business.transactions.includes(activeTab.toLowerCase())
-  //         )
-  //       )
-  //     );
-  // };
+    return fetch(yelpUrl, apiOptions)
+      .then((res) => res.json())
+      .then((json) =>
+        setRestaurantData(
+          json.businesses.filter((business) =>
+            business.transactions.includes(activeTab.toLowerCase())
+          )
+        )
+      );
+  };
 
-  // useEffect(() => {
-  //   getRestaurantsFromYelp();
-  // }, []);
+  useEffect(() => {
+    getRestaurantsFromYelp();
+  }, [city]);
 
     return (
         <SafeAreaView style={{backgroundColor:'#eee', flex:1}}>
         <View style={{backgroundColor:"white", padding:15}}>
-        <NavbarTabs/>
-        <SearchBar/>
+        <NavbarTabs activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <SearchBar cityHandler={setCity}/>
         </View>
         <ScrollView showsVerticalsScrollIndicator={false} style={{flex:1}}>
         <Categories/>

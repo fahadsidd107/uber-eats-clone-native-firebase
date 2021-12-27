@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text,TouchableOpacity } from "react-native";
 
-export default function NavbarTabs() {
+export default function NavbarTabs(props) {
   const [activeTab, setActiveTab] = useState("Delivery");
   return (
     <View style={{ flexDirection: "row", alignSelf: "center" }}>
@@ -9,15 +9,15 @@ export default function NavbarTabs() {
         Text="Delivery"
         // BtnColor="black"
         // TextColor="white"
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
       />
       <HeaderButton
         Text="Pick up"
         // BtnColor="white"
         // TextColor="black"
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
       />
     </View>
   );
