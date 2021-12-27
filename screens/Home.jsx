@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import {  Text, View,SafeAreaView } from 'react-native';
-import { ScrollView } from 'react-native-web';
+import {  Text, View,SafeAreaView,ScrollView } from 'react-native';
 import Categories from '../components/Categories';
 import NavbarTabs from '../components/NavbarTabs';
 import RestaurantItem, { localRestaurants } from '../components/RestaurantItem';
@@ -44,7 +43,7 @@ const [restaurantData, setRestaurantData] = useState(localRestaurants)
         <NavbarTabs/>
         <SearchBar/>
         </View>
-        <ScrollView showsVerticalsScrollIndicator={false}>
+        <ScrollView showsVerticalsScrollIndicator={false} style={{flex:1}}>
         <Categories/>
         <RestaurantItem restaurantData={restaurantData}/>
         
