@@ -9,32 +9,32 @@ const YELP_API_KEY = "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7
 
 export default function Home() {
 const [restaurantData, setRestaurantData] = useState(localRestaurants)
-const [city, setCity] = useState("Karachi");
+const [city, setCity] = useState("New York");
 const [activeTab,setActiveTab]= useState('Delivery')  
 
-  // const getRestaurantsFromYelp = () => {
-  //   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
+  const getRestaurantsFromYelp = () => {
+    const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
-  //   const apiOptions = {
-  //     headers: {
-  //       Authorization: `Bearer ${YELP_API_KEY}`,
-  //     },
-  //   mode: "no-cors"
-  //   };
+    const apiOptions = {
+      headers: {
+        Authorization: `Bearer ${YELP_API_KEY}`,
+      },
+    mode: "no-cors"
+    };
 
-  //   return fetch(yelpUrl, apiOptions)
-  //     .then((res) => res.json())
-  //     .then((json) =>
-  //       setRestaurantData(
-  //         json.businesses.filter((business) =>
-  //           business.transactions.includes(activeTab.toLowerCase())
-  //         )
-  //       )
-  //     );
-  // };
+    return fetch(yelpUrl, apiOptions)
+      .then((res) => res.json())
+      .then((json) =>
+        setRestaurantData(
+          json.businesses.filter((business) =>
+            business.transactions.includes(activeTab.toLowerCase())
+          )
+        )
+      );
+  };
 
   useEffect(() => {
-    // getRestaurantsFromYelp();
+    getRestaurantsFromYelp();
   }, [city,activeTab]);
 
     return (

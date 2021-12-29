@@ -22,6 +22,7 @@ export const localRestaurants = [
     price: "$$",
     reviews: 1244,
     rating: 3.7,
+    type:'Pickup'
   },
   {
     name: "Huzaifa Burger Point",
