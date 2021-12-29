@@ -12,30 +12,30 @@ const [restaurantData, setRestaurantData] = useState(localRestaurants)
 const [city, setCity] = useState("Karachi");
 const [activeTab,setActiveTab]= useState('Delivery')  
 
-  const getRestaurantsFromYelp = () => {
-    const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
+  // const getRestaurantsFromYelp = () => {
+  //   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
-    const apiOptions = {
-      headers: {
-        Authorization: `Bearer ${YELP_API_KEY}`,
-      },
-    mode: "no-cors"
-    };
+  //   const apiOptions = {
+  //     headers: {
+  //       Authorization: `Bearer ${YELP_API_KEY}`,
+  //     },
+  //   mode: "no-cors"
+  //   };
 
-    return fetch(yelpUrl, apiOptions)
-      .then((res) => res.json())
-      .then((json) =>
-        setRestaurantData(
-          json.businesses.filter((business) =>
-            business.transactions.includes(activeTab.toLowerCase())
-          )
-        )
-      );
-  };
+  //   return fetch(yelpUrl, apiOptions)
+  //     .then((res) => res.json())
+  //     .then((json) =>
+  //       setRestaurantData(
+  //         json.businesses.filter((business) =>
+  //           business.transactions.includes(activeTab.toLowerCase())
+  //         )
+  //       )
+  //     );
+  // };
 
   useEffect(() => {
-    getRestaurantsFromYelp();
-  }, [city]);
+    // getRestaurantsFromYelp();
+  }, [city,activeTab]);
 
     return (
         <SafeAreaView style={{backgroundColor:'#eee', flex:1}}>
