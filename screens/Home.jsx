@@ -5,6 +5,8 @@ import NavbarTabs from '../components/NavbarTabs';
 import RestaurantItem, { localRestaurants } from '../components/RestaurantItem';
 import SearchBar from '../components/SearchBar';
 import cors from "cors"
+import { Divider } from 'react-native-elements/dist/divider/Divider';
+import BottomTabs from '../components/BottomTabs';
 //const YELP_API_KEY = "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7iBQ9R74SyfxRg9LWnBAkZY06BtAZAe4d2dfX-2vuX8a1l5V7foctHfX9UKEyoM5ts3YXYx";
 
 export default function Home() {
@@ -46,9 +48,9 @@ const [activeTab,setActiveTab]= useState('Delivery')
         <ScrollView showsVerticalsScrollIndicator={false} style={{flex:1}}>
         <Categories/>
         <RestaurantItem restaurantData={restaurantData} activeTab={activeTab} setActiveTab={setActiveTab}/>
-        
         </ScrollView>
-        
+        <Divider width={1}/>
+        <BottomTabs/>
         </SafeAreaView>
           
         
