@@ -32,7 +32,7 @@ const items = [
     text: "Desserts",
   },
 ];
-export default function Categories() {
+export default function Categories(props) {
   return (
     <View
       style={{

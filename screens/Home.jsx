@@ -45,7 +45,7 @@ const [activeTab,setActiveTab]= useState('Delivery')
         </View>
         <ScrollView showsVerticalsScrollIndicator={false} style={{flex:1}}>
         <Categories/>
-        <RestaurantItem restaurantData={restaurantData}/>
+        <RestaurantItem restaurantData={restaurantData} activeTab={activeTab} setActiveTab={setActiveTab}/>
         
         </ScrollView>
         
