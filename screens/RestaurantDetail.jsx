@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import { Divider } from 'react-native-elements'
 import About from '../components/RestaurantDetail/About'
+ 
 
 const RestaurantDetail = () => {
     return (
@@ -13,3 +14,4 @@ const RestaurantDetail = () => {
 }
 
 export default RestaurantDetail
+
