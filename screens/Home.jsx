@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import {  Text, View,SafeAreaView,ScrollView } from 'react-native';
-import Categories from '../components/Categories';
-import NavbarTabs from '../components/NavbarTabs';
-import RestaurantItem, { localRestaurants } from '../components/RestaurantItem';
-import SearchBar from '../components/SearchBar';
+import Categories from '../components/home/Categories';
+import NavbarTabs from '../components/home/NavbarTabs';
+import RestaurantItem, { localRestaurants } from '../components/home/RestaurantItem';
+import SearchBar from '../components/home/SearchBar';
 import cors from "cors"
 import { Divider } from 'react-native-elements/dist/divider/Divider';
-import BottomTabs from '../components/BottomTabs';
+import BottomTabs from '../components/home/BottomTabs';
 //const YELP_API_KEY = "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7iBQ9R74SyfxRg9LWnBAkZY06BtAZAe4d2dfX-2vuX8a1l5V7foctHfX9UKEyoM5ts3YXYx";
 
 export default function Home() {
