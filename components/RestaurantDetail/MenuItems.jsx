@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, ScrollView } from 'react-native'
 import { patchWebProps } from 'react-native-elements/dist/helpers';
 import { StyleSheet } from 'react-native-web';
 
@@ -64,7 +64,8 @@ export const foods = [
 const MenuItems = () => {
     return (
       <>
-      {foods.map((food,index)=>(
+   <ScrollView showsHorizontalScrollIndicator={false}>
+   {foods.map((food,index)=>(
         <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#e6ffe6',marginVertical:5}}>
         <View style={styles.menuItemStyle}>
           <FoodInfo food={food}/>
@@ -73,6 +74,7 @@ const MenuItems = () => {
 
     </View>
       ))}
+   </ScrollView>
       
     </>
       )
