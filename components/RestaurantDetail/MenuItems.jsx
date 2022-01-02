@@ -33,11 +33,11 @@ export const foods = [
           "https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/Spring-Roll-Recipe.jpg",
     },
     {
-        title: "Muhammadi Kabab House",
-        description: '',
-        price: "$$",
+        title: "Chicken Corn Soup",
+        description: 'Sweet corn soup made with tender corn kernels, spices and herbs. Serve it any time of the day, for a simple meal with cheese toast, noodles or pasta',
+        price: "Rs.70",
         image:
-          "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
+          "https://img.freepik.com/free-photo/lentil-soup-with-mixed-ingredients-herbs-white-bowl-with-spoon_114579-3083.jpg?size=338&ext=jpg",
     },
     {
         title: "Muhammadi Kabab House",
