@@ -13,10 +13,10 @@ export const foods = [
     },
     {
         title: "Puri-Paratha",
-        description: '',
-        price: "$$",
+        description: 'Puri-Paratha is a deep-fried Big-Puri made from whole-wheat flour served with potato and maize savory curry',
+        price: "Rs.340/kg",
         image:
-          "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
+          "https://photo-cdn.urdupoint.com/show_img_new/cooking/cooking_images/570x400/pic_48da3_1515576620.jpg._3",
     },
     {
         title: "Muhammadi Kabab House",
