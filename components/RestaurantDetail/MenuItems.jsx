@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import { patchWebProps } from 'react-native-elements/dist/helpers';
 import { StyleSheet } from 'react-native-web';
 
@@ -9,10 +9,10 @@ export const foods = [
       description: 'Puri is a deep-fried bread made from unleavened whole-wheat flour served with potato and maize savory curry',
       price: "Rs.25",
       image:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fparenting.firstcry.com%2Farticles%2Fpuri-bhaji-recipe-toddlers%2F&psig=AOvVaw1vMiG0d-uIwzwzhfd2m9y4&ust=1641221289763000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOioxvKnk_UCFQAAAAAdAAAAABAZ",
+        "https://img.freepik.com/free-photo/poori-masala-curry-aloo-sabzi-puri_466689-77501.jpg?size=338&ext=jpg",
     },
     {
-        title: "Muhammadi Kabab House",
+        title: "Puri-Paratha",
         description: '',
         price: "$$",
         image:
@@ -52,29 +52,48 @@ export const foods = [
     menuItemStyle: {
       flexDirection: "row",
       justifyContent: "space-between",
-      margin: 20,
+      margin: 8,
     },
   
     titleStyle: {
-      fontSize: 19,
+      fontSize: 22,
       fontWeight: "600",
     },
   });
 
 const MenuItems = () => {
     return (
-        <View>
-            <FoodInfo foods={foods[0]}/>
-        </View>
-    )
-}
+      <>
+      {foods.map((food,index)=>(
+        <View key={index}>
+        <View style={styles.menuItemStyle}>
+          <FoodInfo food={food}/>
+          <FoodImage food={food}/>
+      </View>
+
+    </View>
+      ))}
+      
+    </>
+      )
+    }
+      
 
 export default MenuItems
 
 const FoodInfo =(props)=>(
-<View>
-<Text>{props.foods.title}</Text>
-<Text>{props.foods.description}</Text>
-<Text>{props.foods.price}</Text>
+<View style={{width:240,justifyContent:'space-evenly'}}>
+<Text style={styles.titleStyle}>{props.food.title}</Text>
+<Text style={{fontSize:12,color:'#808080'}}>{props.food.description}</Text>
+<Text style={{fontWeight:'600'}}>{props.food.price}</Text>
 </View>
+)
+
+const FoodImage =(props)=>(
+  <View>
+    <Image source={{uri : props.food.image}} style={{
+      width: 100,
+        height: 100,
+        borderRadius: 8}}/>
+  </View>
 )
