@@ -19,18 +19,18 @@ export const foods = [
           "https://photo-cdn.urdupoint.com/show_img_new/cooking/cooking_images/570x400/pic_48da3_1515576620.jpg._3",
     },
     {
-        title: "Muhammadi Kabab House",
-        description: '',
-        price: "$$",
+        title: "Aloo Samosay",
+        description: 'A samosa is a fried or baked pastry with a savory filling, including ingredients such as spiced potatoes, onions',
+        price: "Rs.20",
         image:
-          "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
+          "https://image.freepik.com/free-photo/vegetarian-traditional-street-food-india_57665-7879.jpg",
     },
     {
-        title: "Muhammadi Kabab House",
+        title: "Spring Roll",
         description: '',
         price: "$$",
         image:
-          "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
+          "https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/Spring-Roll-Recipe.jpg",
     },
     {
         title: "Muhammadi Kabab House",
