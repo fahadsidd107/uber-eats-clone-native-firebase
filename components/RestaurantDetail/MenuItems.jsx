@@ -40,11 +40,11 @@ export const foods = [
           "https://img.freepik.com/free-photo/lentil-soup-with-mixed-ingredients-herbs-white-bowl-with-spoon_114579-3083.jpg?size=338&ext=jpg",
     },
     {
-        title: "Muhammadi Kabab House",
-        description: '',
-        price: "$$",
+        title: "Falooda",
+        description: 'A falooda is a cold dessert made with noodles.It is made by mixing rose syrup, vermicelli, and sweet basil seeds with milk, often served with ice cream.',
+        price: "Rs.100",
         image:
-          "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
+          "https://img.freepik.com/free-photo/falooda-faluda-is-popular-indian-dessert-strawberry-mango-flavoured-which-has-ice-cream-noodles-sweet-basil-seeds-nuts-selective-focus_466689-36670.jpg?size=338&ext=jpg",
     },
   ];
 
