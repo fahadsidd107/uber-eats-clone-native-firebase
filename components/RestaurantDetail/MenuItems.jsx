@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
+import { Divider } from 'react-native-elements/dist/divider/Divider';
 import { patchWebProps } from 'react-native-elements/dist/helpers';
 import { StyleSheet } from 'react-native-web';
 
@@ -66,12 +67,12 @@ const MenuItems = () => {
       <>
    <ScrollView showsHorizontalScrollIndicator={false}>
    {foods.map((food,index)=>(
-        <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#e6ffe6',marginVertical:5}}>
+        <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#f2fdf2',marginVertical:3}}>
         <View style={styles.menuItemStyle}>
           <FoodInfo food={food}/>
           <FoodImage food={food}/>
       </View>
-
+{/* <Divider width={0.5} orientation='vertical'/> */}
     </View>
       ))}
    </ScrollView>
