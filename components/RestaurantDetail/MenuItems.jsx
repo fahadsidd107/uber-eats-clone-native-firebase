@@ -65,7 +65,7 @@ const MenuItems = () => {
     return (
       <>
       {foods.map((food,index)=>(
-        <View key={index}>
+        <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#e6ffe6',marginVertical:5}}>
         <View style={styles.menuItemStyle}>
           <FoodInfo food={food}/>
           <FoodImage food={food}/>
