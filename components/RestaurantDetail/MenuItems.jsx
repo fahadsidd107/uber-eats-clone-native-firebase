@@ -7,14 +7,14 @@ import { StyleSheet } from 'react-native-web';
 export const foods = [
     {
       title: "Puri",
-      description: 'Puri is a deep-fried bread made from unleavened whole-wheat flour served with potato and maize savory curry',
+      description: ' A Puri is a deep-fried bread made from unleavened whole-wheat flour served with potato and maize savory curry',
       price: "Rs.25",
       image:
         "https://img.freepik.com/free-photo/poori-masala-curry-aloo-sabzi-puri_466689-77501.jpg?size=338&ext=jpg",
     },
     {
         title: "Puri-Paratha",
-        description: 'Puri-Paratha is a deep-fried Big-Puri made from whole-wheat flour served with potato and maize savory curry',
+        description: 'A Puri-Paratha is a deep-fried Big-Puri made from whole-wheat flour served with potato and maize savory curry',
         price: "Rs.340/kg",
         image:
           "https://photo-cdn.urdupoint.com/show_img_new/cooking/cooking_images/570x400/pic_48da3_1515576620.jpg._3",
