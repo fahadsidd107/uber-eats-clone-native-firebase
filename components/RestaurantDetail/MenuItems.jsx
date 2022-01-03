@@ -87,7 +87,7 @@ export default MenuItems
 const FoodInfo =(props)=>(
 <View style={{width:240,justifyContent:'space-evenly'}}>
 <Text style={styles.titleStyle}>{props.food.title}</Text>
-<Text style={{fontSize:12,color:'#808080'}}>{props.food.description}</Text>
+<Text style={{fontSize:12,color:'#8A8884'}}>{props.food.description}</Text>
 <Text style={{fontWeight:'600'}}>{props.food.price}</Text>
 </View>
 )
