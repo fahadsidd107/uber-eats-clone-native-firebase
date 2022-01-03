@@ -67,7 +67,7 @@ const MenuItems = () => {
       <>
    <ScrollView showsHorizontalScrollIndicator={false}>
    {foods.map((food,index)=>(
-        <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#EFF5E3',marginVertical:3}}>
+        <View key={index} style={{marginHorizontal:6,borderRadius:10,backgroundColor:'#EFF5E3',marginVertical:3}}>
         <View style={styles.menuItemStyle}>
           <FoodInfo food={food}/>
           <FoodImage food={food}/>
