@@ -21,7 +21,7 @@ export const foods = [
     },
     {
         title: "Aloo Samosay",
-        description: 'A samosa is a fried or baked pastry with a savory filling, including ingredients such as spiced potatoes, onions',
+        description: 'Our samosa is a fried or baked pastry with a savory filling, including ingredients such as spiced potatoes, onions',
         price: "Rs.20",
         image:
           "https://image.freepik.com/free-photo/vegetarian-traditional-street-food-india_57665-7879.jpg",
