@@ -1,6 +1,14 @@
 import React from 'react'
 import { View, Text,Image } from 'react-native'
 
+const getRestaurantInfo = {
+    name :'Iqbal Halwa Puri and Snacks',
+    image:'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg',
+    price:'$$',
+    reviews:1500,
+    rating:4.5
+}
+
 const image = 'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg'
 const title = 'Iqbal Halwa Puri and Snacks'
 const description = 'Desi , Comfort • $$ • 🎫 • 4 ⭐ (2913+)  '
