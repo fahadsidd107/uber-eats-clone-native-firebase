@@ -14,7 +14,7 @@ export const foods = [
     },
     {
         title: "Puri-Paratha",
-        description: 'A Puri-Paratha is a deep-fried Big-Puri made from whole-wheat flour served with potato and maize savory curry',
+        description: 'A Puri-Paratha is a type of deep-fried Puri larger and heavier made from whole-wheat flour.',
         price: "Rs.340/kg",
         image:
           "https://photo-cdn.urdupoint.com/show_img_new/cooking/cooking_images/570x400/pic_48da3_1515576620.jpg._3",
