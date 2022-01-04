@@ -42,7 +42,7 @@ export const foods = [
     },
     {
         title: "Falooda",
-        description: 'A Falooda is a cold dessert made with noodles.It is made by mixing rose syrup, vermicelli, and sweet basil seeds with milk, often served with ice cream.',
+        description: 'Our Falooda is a cold dessert made with noodles.It is made by mixing rose syrup, vermicelli, and sweet basil seeds with milk, often served with ice cream.',
         price: "Rs.100",
         image:
           "https://img.freepik.com/free-photo/falooda-faluda-is-popular-indian-dessert-strawberry-mango-flavoured-which-has-ice-cream-noodles-sweet-basil-seeds-nuts-selective-focus_466689-36670.jpg?size=338&ext=jpg",
