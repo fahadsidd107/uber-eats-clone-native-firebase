@@ -17,6 +17,7 @@ const [city, setCity] = useState("New York");
 const [activeTab,setActiveTab]= useState('Delivery')  
 
 //
+
   // const getRestaurantsFromYelp = () => {
   //   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
@@ -41,6 +42,7 @@ const [activeTab,setActiveTab]= useState('Delivery')
   // useEffect(() => {
   //   getRestaurantsFromYelp();
   // }, [city,activeTab]);
+  
 //
 
     return (
