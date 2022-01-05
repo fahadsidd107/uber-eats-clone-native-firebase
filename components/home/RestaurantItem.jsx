@@ -9,7 +9,7 @@ export const localRestaurants = [
     name: "Muhammadi Kabab House",
     image_url:
       "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: [{title:'Barbeque'},{title:'Bar'}],
     price: "PKR",
     reviews: 1244,
     rating: 4,
