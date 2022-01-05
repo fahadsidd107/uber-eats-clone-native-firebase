@@ -37,7 +37,7 @@ export const localRestaurants = [
     name: "Muhammadi Sweets",
     image_url:
       "https://i.pinimg.com/564x/9b/a2/37/9ba2373f9b81b8607bcbc834d8acc582.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: [{title:'Fusion'},{title:'Bakery'}],
     price: "PKR",
     reviews: 1244,
     rating: 4.5,
@@ -46,7 +46,7 @@ export const localRestaurants = [
     name: "MashAllah Katakat Fish",
     image_url:
       "https://i.pinimg.com/564x/c5/e7/50/c5e750072624bcf4d90d57ff6fb27b5a.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: [{title:'Desi'},{title:'Howker'}],
     price: "PKR",
     reviews: 1244,
     rating: 3.7,
