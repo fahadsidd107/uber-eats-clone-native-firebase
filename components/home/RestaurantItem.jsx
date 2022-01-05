@@ -18,17 +18,17 @@ export const localRestaurants = [
     name: "Iqbal Halwa Puri and Snacks",
     image_url:
       "https://i.pinimg.com/564x/b8/80/94/b88094e5dfa55fb8ae626b99158ca20c.jpg",
-    categories: ["Cafe", "Bar"],
+    categories: [{title:'Desi'},{title:'Bar'}],
     price: "PKR",
     reviews: 1244,
     rating: 3.7,
     type:'Delivery'
   },
   {
-    name: "Huzaifa Burger Point",
+    name: "Sidra Fast Food",
     image_url:
       "https://i.pinimg.com/564x/ca/3c/e6/ca3ce6e26ed057b8dfb064673db85199.jpg",
-    categories: ["Indian", "Bar"],
+    categories: [{title:'Fast Food'},{title:'Restaurant'}],
     price: "PKR",
     reviews: 700,
     rating: 4.9,
