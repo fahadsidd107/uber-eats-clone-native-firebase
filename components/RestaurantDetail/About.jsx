@@ -1,27 +1,29 @@
 import React from 'react'
 import { View, Text,Image } from 'react-native'
 
-// const getRestaurantInfo = {
-//     name :'Iqbal Halwa Puri and Snacks',
-//     image:'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg',
-//     price:'$$',
-//     reviews:1500,
-//     rating:4.5,
-//     category: [{title:'Thai'},{title:'Comfort food'}]
-// };
+const getRestaurantInfo = {
+    name :'Iqbal Halwa Puri and Snacks',
+    image:'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg',
+    price:'$$',
+    reviews:1500,
+    rating:4.5,
+    category: [{title:'Thai'},{title:'Comfort food'}]
+};
 
-// const {name,image,price,reviews,rating,category}=getRestaurantInfo
+const {name,image,price,reviews,rating,category}=getRestaurantInfo
 
-// const formattedCategories = categories.map((cat)=>cat.title).join('•')
+const formattedCategories = category.map((cat)=>cat.title).join(' • ')
 
-const image = 'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg'
-const title = 'Iqbal Halwa Puri and Snacks'
-const description = 'Desi , Comfort • $$ • 🎫 • 4 ⭐ (2913+)  '
+const description =`${formattedCategories} ${price ? ' • ' + price : ' '} • 🎫 • ${rating} ⭐ (${reviews}+)`;
+
+// const image = 'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg'
+// const name = 'Iqbal Halwa Puri and Snacks'
+// const description = 'Desi , Comfort • $$ • 🎫 • 4 ⭐ (2913+)  '
 const About = () => {
     return (
         <View>
             <RestaurantImage image={image}/>
-            <RestaurantTitle title={title}/>
+            <RestaurantTitle name={name}/>
             <RestaurantDescription description={description}/>
         </View>
     )
@@ -43,7 +45,7 @@ fontWeight:'600',
 marginTop:10,
 marginHorizontal:15
     }}
-    >{props.title}</Text>
+    >{props.name}</Text>
 )
 
 const RestaurantDescription =(props)=>(
