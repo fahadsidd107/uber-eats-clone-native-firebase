@@ -14,10 +14,10 @@ export default function RootNavigation() {
   
     return (
        <NavigationContainer>
-           <Stack.Navigator screenOptions={screenOptions}>
+           <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
            <Stack.Screen name="Home" component={Home} />
            <Stack.Screen name="RestaurantDetail" component={RestaurantDetail} />
-           
+
            </Stack.Navigator>
        </NavigationContainer>
     )
