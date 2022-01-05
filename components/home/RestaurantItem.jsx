@@ -10,16 +10,16 @@ export const localRestaurants = [
     image_url:
       "https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg",
     categories: ["Cafe", "Bar"],
-    price: "$$",
+    price: "PKR",
     reviews: 1244,
     rating: 4,
   },
   {
-    name: "Sidra Fast Food",
+    name: "Iqbal Halwa Puri and Snacks",
     image_url:
       "https://i.pinimg.com/564x/b8/80/94/b88094e5dfa55fb8ae626b99158ca20c.jpg",
     categories: ["Cafe", "Bar"],
-    price: "$$",
+    price: "PKR",
     reviews: 1244,
     rating: 3.7,
     type:'Delivery'
@@ -29,7 +29,7 @@ export const localRestaurants = [
     image_url:
       "https://i.pinimg.com/564x/ca/3c/e6/ca3ce6e26ed057b8dfb064673db85199.jpg",
     categories: ["Indian", "Bar"],
-    price: "$$",
+    price: "PKR",
     reviews: 700,
     rating: 4.9,
   },
@@ -38,7 +38,7 @@ export const localRestaurants = [
     image_url:
       "https://i.pinimg.com/564x/9b/a2/37/9ba2373f9b81b8607bcbc834d8acc582.jpg",
     categories: ["Cafe", "Bar"],
-    price: "$$",
+    price: "PKR",
     reviews: 1244,
     rating: 4.5,
   },
@@ -47,7 +47,7 @@ export const localRestaurants = [
     image_url:
       "https://i.pinimg.com/564x/c5/e7/50/c5e750072624bcf4d90d57ff6fb27b5a.jpg",
     categories: ["Cafe", "Bar"],
-    price: "$$",
+    price: "PKR",
     reviews: 1244,
     rating: 3.7,
   },
@@ -55,8 +55,8 @@ export const localRestaurants = [
     name: "Huzaifa Burger Point",
     image_url:
       "https://i.pinimg.com/564x/99/0b/95/990b95dca1f57590ce2556a771703b6d.jpg",
-    categories: ["Indian", "Bar"],
-    price: "$$",
+    categories: [{title:'Fusion'},{title:'Howker'}],
+    price: "PKR",
     reviews: 700,
     rating: 4.9,
   },
@@ -76,7 +76,7 @@ export default function RestaurantItem({ navigation, ...props }) {
             name: restaurant.name,
             image: restaurant.image_url,
             price: restaurant.price,
-            reviews: restaurant.review_count,
+            reviews: restaurant.reviews,
             rating: restaurant.rating,
             categories: restaurant.categories,
           })

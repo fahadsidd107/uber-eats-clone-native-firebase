@@ -3,33 +3,34 @@ import { View, Text,Image } from 'react-native'
 
 const getRestaurantInfo = {
     name :'Iqbal Halwa Puri and Snacks',
-    image:'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg',
+    image:'https://i.pinimg.com/564x/b8/80/94/b88094e5dfa55fb8ae626b99158ca20c.jpg',
     price:'$$',
     reviews:1500,
     rating:4.5,
     category: [{title:'Thai'},{title:'Comfort food'}]
 };
 
-const {name,image,price,reviews,rating,category}=getRestaurantInfo
-
-const formattedCategories = category.map((cat)=>cat.title).join(' • ')
-
-const description =`${formattedCategories} ${price ? ' • ' + price : ' '} • 🎫 • ${rating} ⭐ (${reviews}+)`;
 
 // const image = 'https://i.pinimg.com/564x/b0/ee/42/b0ee42499cf73852cfc8743c29faa724.jpg'
 // const name = 'Iqbal Halwa Puri and Snacks'
 // const description = 'Desi , Comfort • $$ • 🎫 • 4 ⭐ (2913+)  '
 
+const About = (props) => {
+    const { name, image, price, reviews, rating, categories } =
+    props.route.params;
 
+  const formattedCategories = categories.map((cat) => cat.title).join(" • ");
 
-const About = () => {
-    return (
-        <View>
-            <RestaurantImage image={image}/>
-            <RestaurantTitle name={name}/>
-            <RestaurantDescription description={description}/>
-        </View>
-    )
+  const description = `${formattedCategories} ${
+    price ? " • " + price : ""
+  } • 🎫 • ${rating} ⭐ (${reviews}+)`;
+  return (
+    <View>
+      <RestaurantImage image={image} />
+      <RestaurantName name={name} />
+      <RestaurantDescription description={description} />
+    </View>
+  );
 }
 
 export default About
@@ -40,7 +41,7 @@ const RestaurantImage =(props)=>(
     />
 )
 
-const RestaurantTitle =(props)=>(
+const RestaurantName =(props)=>(
     <Text 
     style={{
 fontSize:29,
