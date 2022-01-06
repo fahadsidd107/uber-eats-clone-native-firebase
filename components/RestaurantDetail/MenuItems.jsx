@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
+import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import { Divider } from 'react-native-elements/dist/divider/Divider';
 import { patchWebProps } from 'react-native-elements/dist/helpers';
 import { StyleSheet } from 'react-native-web';
@@ -67,8 +68,9 @@ const MenuItems = () => {
       <>
    <ScrollView showsHorizontalScrollIndicator={false}>
    {foods.map((food,index)=>(
-        <View key={index} style={{marginHorizontal:10,borderRadius:10,backgroundColor:'#EFF5E3',marginVertical:3}}>
+        <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#EFF5E3',marginVertical:3}}>
         <View style={styles.menuItemStyle}>
+        <BouncyCheckbox/>
           <FoodInfo food={food}/>
           <FoodImage food={food}/>
       </View>
@@ -85,7 +87,7 @@ const MenuItems = () => {
 export default MenuItems
 
 const FoodInfo =(props)=>(
-<View style={{width:240,justifyContent:'space-evenly'}}>
+<View style={{width:200,justifyContent:'space-evenly'}}>
 <Text style={styles.titleStyle}>{props.food.title}</Text>
 <Text style={{fontSize:12,color:'#8A8884'}}>{props.food.description}</Text>
 <Text style={{fontWeight:'600'}}>{props.food.price}</Text>
