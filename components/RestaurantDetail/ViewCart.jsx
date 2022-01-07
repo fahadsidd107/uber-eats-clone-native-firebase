@@ -11,7 +11,7 @@ const ViewCart = () => {
         flexDirection: "row",
         justifyContent:'center',
         position: "absolute",
-        bottom:-95,
+        bottom:-92,
         zIndex:999,
         marginHorizontal:40,
       }}
@@ -34,7 +34,7 @@ const ViewCart = () => {
             position: "relative",
           }}
         >
-          <Text style={{ color: "white", fontSize: 20 }}>View cart</Text>
+          <Text style={{ color: "white", fontSize: 20 }}>View Cart</Text>
         </TouchableOpacity>
       </View>
     </View>
