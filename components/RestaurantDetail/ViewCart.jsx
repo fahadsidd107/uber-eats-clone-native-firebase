@@ -9,8 +9,9 @@ const ViewCart = () => {
         flex: 1,
         alignItems: "center",
         flexDirection: "row",
+        justifyContent:'center',
         position: "absolute",
-        bottom:390,
+        bottom:-95,
         zIndex:999,
         marginHorizontal:40,
       }}
