@@ -70,7 +70,7 @@ const MenuItems = () => {
    {foods.map((food,index)=>(
         <View key={index} style={{marginHorizontal:5,borderRadius:10,backgroundColor:'#EFF5E3',marginVertical:3}}>
         <View style={styles.menuItemStyle}>
-        <BouncyCheckbox iconStyle={{borderColor: 'grey', borderRadius: 5,}} fillColor='green'/>
+        <BouncyCheckbox iconStyle={{borderColor: 'black', borderRadius: 5,}} fillColor='green'/>
           <FoodInfo food={food}/>
           <FoodImage food={food}/>
       </View>
