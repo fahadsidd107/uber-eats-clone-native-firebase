@@ -1,8 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { useSelector } from "react-redux";
 
 const ViewCart = () => {
+  const items= useSelector((state) => state.cartReducer.selectedItems.items)
   return (
     <View
       style={{
