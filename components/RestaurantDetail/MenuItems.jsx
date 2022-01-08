@@ -3,7 +3,8 @@ import { View, Text, Image, ScrollView } from 'react-native'
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import { Divider } from 'react-native-elements/dist/divider/Divider';
 import { patchWebProps } from 'react-native-elements/dist/helpers';
-import { StyleSheet } from 'react-native-web';
+import { StyleSheet } from 'react-native';
+import {useDispatch} from 'react-redux';
 
 export const foods = [
     {
@@ -49,6 +50,12 @@ export const foods = [
           "https://img.freepik.com/free-photo/falooda-faluda-is-popular-indian-dessert-strawberry-mango-flavoured-which-has-ice-cream-noodles-sweet-basil-seeds-nuts-selective-focus_466689-36670.jpg?size=338&ext=jpg",
     },
   ];
+
+const dispatch = useDispatch()
+const selectItem = (item)=> dispatch({
+  type:'ADD_TO_CART',
+  payload : item,
+})
 
   const styles = StyleSheet.create({
     menuItemStyle: {
