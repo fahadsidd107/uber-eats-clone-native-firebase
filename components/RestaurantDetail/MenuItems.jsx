@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
 const MenuItems = ({ restaurantName,
   food,
   hideCheckbox,
-  marginLeft,
+  marginLeft
 }) => {
   const dispatch = useDispatch();
   const selectItem = (item,checkBoxValue) =>
