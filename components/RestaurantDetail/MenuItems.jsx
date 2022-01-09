@@ -42,7 +42,7 @@ export const foods = [
   {
     title: "Chicken Corn Soup",
     description:
-      "Sweet corn soup made with tender corn kernels, spices and herbs. Serve it any time of the day, for a simple meal with cheese toast, noodles or pasta",
+      "Our Sweet corn soup made with tender corn kernels, spices and herbs. Serve it any time of the day, for a simple meal with cheese toast, noodles or pasta",
     price: "Rs.70",
     image:
       "https://img.freepik.com/free-photo/lentil-soup-with-mixed-ingredients-herbs-white-bowl-with-spoon_114579-3083.jpg?size=338&ext=jpg",
