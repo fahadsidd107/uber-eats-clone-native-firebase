@@ -93,7 +93,7 @@ const MenuItems = ({ restaurantName,
             style={{
               marginHorizontal: 5,
               borderRadius: 10,
-              backgroundColor: "#EFF5E3",
+              backgroundColor: "#EFF5E4",
               marginVertical: 3,
             }}
           >
