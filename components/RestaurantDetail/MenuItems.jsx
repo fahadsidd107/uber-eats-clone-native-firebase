@@ -99,7 +99,7 @@ const MenuItems = ({ restaurantName,
           >
             <View style={styles.menuItemStyle}>
               <BouncyCheckbox
-                iconStyle={{ borderColor: "black", borderRadius: 5 }}
+                iconStyle={{ borderColor: "#000000", borderRadius: 5 }}
                 fillColor="green"
                 onPress={(checkBoxValue) => selectItem(food,checkBoxValue)}
               />
