@@ -34,7 +34,7 @@ export const foods = [
   {
     title: "Spring Roll",
     description:
-      "Spring rolls are a large variety of filled, rolled appetizers or dim sum found in Asian cuisine. The kind of wrapper, fillings, and cooking technique used.",
+      "Our Spring rolls are a large variety of filled, rolled appetizers or dim sum found in Asian cuisine. The kind of wrapper, fillings, and cooking technique used.",
     price: "Rs.30",
     image:
       "https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/Spring-Roll-Recipe.jpg",
