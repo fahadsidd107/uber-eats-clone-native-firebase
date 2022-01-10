@@ -17,43 +17,48 @@ const ViewCart = () => {
     currency: "USD",
   });
 
-  console.log(totalUSD)
+  console.log(totalUSD);
   return (
-
-    <View
-      style={{
-        flex: 1,
-        alignItems: "center",
-        flexDirection: "row",
-        justifyContent:'center',
-        position: "absolute",
-        bottom:-92,
-        zIndex:999,
-        marginHorizontal:40,
-      }}
-    >
-      <View
-        style={{
-          width: "100%",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <TouchableOpacity
+    <>
+      {total ? (
+        <View
           style={{
-            marginTop: 20,
-            backgroundColor: "black",
+            flex: 1,
             alignItems: "center",
-            padding: 13,
-            borderRadius: 30,
-            width: 300,
-            position: "relative",
+            flexDirection: "row",
+            justifyContent: "center",
+            position: "absolute",
+            bottom: -92,
+            zIndex: 999,
+            marginHorizontal: 40,
           }}
         >
-          <Text style={{ color: "white", fontSize: 20 }}>View Cart</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+          <View
+            style={{
+              width: "100%",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                marginTop: 20,
+                backgroundColor: "black",
+                alignItems: "center",
+                padding: 13,
+                borderRadius: 30,
+                width: 300,
+                position: "relative",
+              }}
+            >
+              <Text style={{ color: "white", fontSize: 20 }}>View Cart</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      ) : (
+        <></>
+      )}
+    </>
   );
 };
 

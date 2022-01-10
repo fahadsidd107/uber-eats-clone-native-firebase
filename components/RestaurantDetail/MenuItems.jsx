@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, Image, ScrollView } from "react-native";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { Divider } from "react-native-elements/dist/divider/Divider";
-import { patchWebProps } from "react-native-elements/dist/helpers";
 import { StyleSheet } from "react-native";
 import { useDispatch } from "react-redux";
 
