@@ -7,7 +7,7 @@ export default function BottomTabs() {
     <View
       style={{
         flexDirection: "row",
-        margin: 5,
+        margin: 10,
         marginHorizontal: 30,
         justifyContent: "space-between",
       }}

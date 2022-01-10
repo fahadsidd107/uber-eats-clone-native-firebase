@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text, Image,ScrollView } from "react-native";
-
+import { View, Text, Image, ScrollView } from "react-native";
 
 const items = [
   {
@@ -32,7 +31,8 @@ const items = [
     text: "Desserts",
   },
 ];
-export default function Categories(props) {
+
+export default function Categories() {
   return (
     <View
       style={{
@@ -58,5 +58,5 @@ export default function Categories(props) {
         ))}
       </ScrollView>
     </View>
-    )
-    ;}
+  );
+}

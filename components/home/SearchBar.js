@@ -3,26 +3,17 @@ import { View, Text } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import AntDesign from "react-native-vector-icons/AntDesign";
+
 export default function SearchBar({ cityHandler }) {
   return (
     <View style={{ marginTop: 15, flexDirection: "row" }}>
       <GooglePlacesAutocomplete
-        onPress={(data, description = null) => {
-          // 'details' is provided when fetchDetails = true
-          console.log(data, description);
-          const city=data.description.split(',')[0]
+        query={{ key: "AIzaSyATiAqIXBARofRD2apZcPQ1eEWZPH4fPV4" }}
+        onPress={(data, details = null) => {
+          console.log(data.description);
+          const city = data.description.split(",")[0];
           cityHandler(city);
         }}
-        query={{ key: "AIzaSyC8LevMasKjLoNvn8tphIPTsm7LSaN7hSE",
-        language: 'en', }}
-        requestUrl={{
-        useOnPlatform: 'web', // or "all"
-        url:
-          'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
-        headers: {
-          Authorization: `an auth token`, // if required for your proxy
-        },
-      }}
         placeholder="Search"
         styles={{
           textInput: {
@@ -50,9 +41,9 @@ export default function SearchBar({ cityHandler }) {
               flexDirection: "row",
               marginRight: 8,
               backgroundColor: "white",
-              alignItems: "center",
-              borderRadius: 30,
               padding: 9,
+              borderRadius: 30,
+              alignItems: "center",
             }}
           >
             <AntDesign
