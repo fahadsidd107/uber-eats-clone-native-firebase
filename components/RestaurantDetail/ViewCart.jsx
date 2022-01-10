@@ -4,9 +4,22 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { useSelector } from "react-redux";
 
 const ViewCart = () => {
-  const items= useSelector((state) => state.cartReducer.selectedItems.items)
-  const total =items.map((item=>Number(item.price.repace('Rs.','')))).reduce((prev,curr)=> prev + curr , 0)
+  const { items, restaurantName } = useSelector(
+    (state) => state.cartReducer.selectedItems
+  );
+
+  const total = items
+    .map((item) => Number(item.price.replace("$", "")))
+    .reduce((prev, curr) => prev + curr, 0);
+
+  const totalUSD = total.toLocaleString("en", {
+    style: "currency",
+    currency: "USD",
+  });
+
+  console.log(totalUSD)
   return (
+
     <View
       style={{
         flex: 1,
