@@ -6,7 +6,7 @@ import Categories from "../components/home/Categories.jsx";
 import HeaderTabs from "../components/home/HeaderTabs.jsx";
 import RestaurantItems, {
   localRestaurants,
-} from "../components/home/RestaurantItems";
+} from "../components/home/RestaurantItems.jsx";
 import SearchBar from "../components/home/SearchBar";
 
 const YELP_API_KEY =
