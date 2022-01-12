@@ -17,6 +17,8 @@ export default function Home({ navigation }) {
   const [city, setCity] = useState("Karachi");
   const [activeTab, setActiveTab] = useState("Delivery");
 
+//
+
   // const getRestaurantsFromYelp = () => {
   //   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
@@ -40,6 +42,9 @@ export default function Home({ navigation }) {
   // useEffect(() => {
   //   getRestaurantsFromYelp();
   // }, [city, activeTab]);
+
+
+//
 
   return (
     <SafeAreaView style={{ backgroundColor: "#eee", flex: 1 }}>
