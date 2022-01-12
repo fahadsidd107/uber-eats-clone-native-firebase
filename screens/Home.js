@@ -7,7 +7,7 @@ import HeaderTabs from "../components/home/HeaderTabs.jsx";
 import RestaurantItems, {
   localRestaurants,
 } from "../components/home/RestaurantItems.jsx";
-import SearchBar from "../components/home/SearchBar";
+import SearchBar from "../components/home/SearchBar.jsx";
 
 const YELP_API_KEY =
   "Xf8yYepVl_QkSk4lnlCjNS3f5Ef3ngMZ8SBI_vK9laAj443s7OT1pw48KQx5Q-agXwwGjxUuRWWg_hlBnNUxYmr3cIcK7oTjqDbhTV6z1Z9ct4qE_c48Ral0IGjcYXYx";
