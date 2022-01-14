@@ -56,7 +56,8 @@ export default function OrderCompleted() {
           height: "100%",
         }}
       >
-        <LottieView
+      {/* lottie */}
+        <View
           style={{ height: 100, alignSelf: "center", marginBottom: 30 }}
           source={require("../assets/animations/check-mark.json")}
           autoPlay
@@ -72,7 +73,8 @@ export default function OrderCompleted() {
             hideCheckbox={true}
             marginLeft={10}
           />
-          <LottieView
+          {/* lottie */}
+          <View
             style={{ height: 200, alignSelf: "center" }}
             source={require("../assets/animations/cooking.json")}
             autoPlay
