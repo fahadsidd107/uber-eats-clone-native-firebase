@@ -188,7 +188,7 @@ export default function ViewCart({ navigation }) {
           }}
         >
         {/* lottie */}
-          <View
+          <LottieView
             style={{ height: 200 }}
             source={require("../../assets/animations/scanner.json")}
             autoPlay
