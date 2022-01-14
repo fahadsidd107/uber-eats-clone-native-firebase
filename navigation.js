@@ -5,7 +5,7 @@ import Home from "./screens/Home.jsx";
 import RestaurantDetail from "./screens/RestaurantDetail.jsx";
 import { Provider as ReduxProvider } from "react-redux";
 import configureStore from "./redux/store";
-import OrderCompleted from "./screens/OrderCompleted";
+import OrderCompleted from "./screens/OrderCompleted.jsx";
 
 const store = configureStore();
 
